@@ -3,10 +3,13 @@ import styles from './Keyboard.module.css'
 
 const KEY: string[] = Array.from({ length: 26 }, (_, i) => String.fromCharCode('a'.charCodeAt(0) + i));
 // console.log(KEY)
-const Keyboard = () => {
+type keyboardProps = {
+    activeLetter: string[],
+    inactiveLetter: string[],
+    guessedLetters: (letter: string) => void,
+}
 
-
-
+const Keyboard = ({ activeLetter, inactiveLetter, guessedLetters }: keyboardProps) => {
     return (
         <div className='flex flex-wrap items-center justify-center gap-2'>
             {KEY.map((key, index) => (

@@ -55,7 +55,11 @@ function App() {
         <h1 className="message text-2xl font-semibold text-center">Lose/Win Message</h1>
         <HangmanDrawing numberOfGuess={incorrectGuesses.length} />
         <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
-        <Keyboard />
+        <Keyboard 
+          activeLetter = {guessedLetters.filter(letter => wordToGuess.includes(letter))}
+          inactiveLetter = {incorrectGuesses}
+          addGuessedLetter= {addGuessedLetter}
+        />
 
       </div>
     </>
