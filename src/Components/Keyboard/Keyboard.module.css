@@ -1,0 +1,23 @@
+
+/* .btn:focus{
+    background-color: #8a1e85;
+    color: white;
+} */
+.btn.active{
+    background-color: transparent;
+    color: black;
+}
+
+.btn.active:hover{
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.btn.active:active{
+    background-color: #254ab1;
+    color: white;
+}
+
+.btn.inactive{
+    opacity: 0.3;
+}
