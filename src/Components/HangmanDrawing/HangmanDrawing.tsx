@@ -1,4 +1,3 @@
-import React from 'react'
 import img0 from '../../../public/gameMedia/1.png'
 import img1 from '../../../public/gameMedia/2.png'
 import img2 from '../../../public/gameMedia/3.png'

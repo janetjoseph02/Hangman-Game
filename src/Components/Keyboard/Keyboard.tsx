@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Keyboard.module.css';
 
 const KEY: string[] = Array.from({ length: 26 }, (_, i) => String.fromCharCode('a'.charCodeAt(0) + i));

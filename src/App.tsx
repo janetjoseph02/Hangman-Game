@@ -6,7 +6,7 @@ import HangmanWord from './Components/HangmanWord/HangmanWord';
 import Keyboard from './Components/Keyboard/Keyboard';
 
 function App() {
-  const [wordToGuess, setWordToGuess] = useState(generate({ minLength: 4 }));
+  const [wordToGuess] = useState(generate({ minLength: 4 }));
   // const [wordToGuess, setWordToGuess] = useState("SARMAD");
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
   const [isLoser, setIsLoser] = useState(false);
@@ -66,7 +66,7 @@ function App() {
       </h1>
 
       <HangmanDrawing nog={incorrectGuesses.length} isWinner={isWinner}/>
-      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess.toString()} />
+      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess.toString()  } />
       <Keyboard
         activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}
         inactiveLetter={incorrectGuesses}
