@@ -6,16 +6,18 @@ import img3 from '../../../public/gameMedia/4.png'
 import img4 from '../../../public/gameMedia/5.png'
 import img5 from '../../../public/gameMedia/6.png'
 import img6 from '../../../public/gameMedia/7.png'
+import winnerImg from '../../../public/gameMedia/winner.png'
 
 type HangManDrawingProps = {
   nog: number;  
+  isWinner: boolean;  
 }
 
-const HangmanDrawing = ({nog} : HangManDrawingProps) => {
+const HangmanDrawing = ({nog, isWinner} : HangManDrawingProps) => {
 
   return (
     <div className=''>
-      <img className=' w-auto h-[22rem]' src={nog === 0 ? img0 : "" || nog === 1 ? img1 : "" || nog === 2 ? img1 : "" || nog === 3 ? img3 : "" || nog === 4 ? img4 : "" || nog === 5 ? img5 : "" || nog >= 6 ? img6 : ""} alt="" />
+      <img className=' w-auto h-[22rem]' src={isWinner ? winnerImg : "" || nog === 0 ? img0 : "" || nog === 1 ? img1 : "" || nog === 2 ? img2 : "" || nog === 3 ? img3 : "" || nog === 4 ? img4 : "" || nog === 5 ? img5 : "" || nog >= 6 ? img6 : "" } alt="" />
     </div>
   )
 }

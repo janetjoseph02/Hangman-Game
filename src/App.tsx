@@ -14,6 +14,8 @@ function App() {
 
   const incorrectGuesses = guessedLetters.filter(item => !wordToGuess.includes(item));
 
+  // console.log(wordToGuess)
+
 
   useEffect(() => {
     if (incorrectGuesses.length >= 6 && !isLoser) {
@@ -63,7 +65,7 @@ function App() {
         {isWinner && "You Won 👏 Click to Play again"}
       </h1>
 
-      <HangmanDrawing nog={incorrectGuesses.length} />
+      <HangmanDrawing nog={incorrectGuesses.length} isWinner={isWinner}/>
       <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
       <Keyboard
         activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}
