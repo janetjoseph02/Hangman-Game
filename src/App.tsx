@@ -66,7 +66,7 @@ function App() {
       </h1>
 
       <HangmanDrawing nog={incorrectGuesses.length} isWinner={isWinner}/>
-      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
+      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess.toString()} />
       <Keyboard
         activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}
         inactiveLetter={incorrectGuesses}
