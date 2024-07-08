@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="main flex flex-col gap-8 items-center max-w-[800px] m-10 h-auto w-screen">
       <h1
-        className={`message text-2xl font-semibold text-center cursor-pointer hover:opacity-80 ${isWinner ? "text-green-600" : "text-red-600"}`}
+        className={`message text-2xl font-semibold text-center cursor-pointer px-5 py-2 rounded-full outline-1 outline-gray-500 hover:outline  ${isWinner ? "text-green-600" : "text-red-600"}`}
         onClick={() => window.location.reload()}
       >
         {isLoser && (
