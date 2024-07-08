@@ -63,7 +63,7 @@ function App() {
           {isWinner && "You Won 👏 Click to Play again"}
         </h1>
 
-        <HangmanDrawing numberOfGuess={incorrectGuesses.length} />
+        <HangmanDrawing nog={incorrectGuesses.length} />
         <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
         <Keyboard
           activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}
