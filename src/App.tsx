@@ -65,8 +65,10 @@ function App() {
         {isWinner && "You Won 👏 Click to Play again"}
       </h1>
 
+      <div className=' flex'>
       <HangmanDrawing nog={incorrectGuesses.length} isWinner={isWinner}/>
       <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess.toString()  } />
+      </div>
       <Keyboard
         activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}
         inactiveLetter={incorrectGuesses}
