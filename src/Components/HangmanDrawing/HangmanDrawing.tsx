@@ -16,7 +16,7 @@ const HangmanDrawing = ({nog, isWinner} : HangManDrawingProps) => {
 
   return (
     <div className=''>
-      <img className=' w-auto h-[22rem]' src={isWinner ? winnerImg : "" || nog === 0 ? img0 : "" || nog === 1 ? img1 : "" || nog === 2 ? img2 : "" || nog === 3 ? img3 : "" || nog === 4 ? img4 : "" || nog === 5 ? img5 : "" || nog >= 6 ? img6 : "" } alt="" />
+      <img className=' h-[20rem]' src={isWinner ? winnerImg : "" || nog === 0 ? img0 : "" || nog === 1 ? img1 : "" || nog === 2 ? img2 : "" || nog === 3 ? img3 : "" || nog === 4 ? img4 : "" || nog === 5 ? img5 : "" || nog >= 6 ? img6 : "" } alt="" />
     </div>
   )
 }
