@@ -17,9 +17,8 @@ const useDarkMode = () => {
 
   }, [setTheme, colorTheme]);
 
-  return (
-    <div>useDarkMode</div>
-  )
+ return [setTheme, colorTheme];
+
 }
 
 export default useDarkMode
