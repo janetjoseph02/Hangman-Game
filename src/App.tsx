@@ -17,7 +17,6 @@ function App() {
 
   const incorrectGuesses = guessedLetters.filter(item => !wordToGuess.includes(item));
 
-  console.log(wordToGuess)
 
   useEffect(() => {
     if (incorrectGuesses.length >= 6 && !isLoser) {
