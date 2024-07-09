@@ -24,7 +24,7 @@ const Keyboard: React.FC<KeyboardProps> = ({ activeLetter, inactiveLetter, addGu
         return (
           <button
             onClick={() => { addGuessedLetter(key) }}
-            className={`w-12 h-14 border border-black rounded-2xl hover:bg-[#5e17eb] hover:text-white transition select-none active:bg-blue-700 ${styles.btn} ${isActive ? 'bg-blue-900 text-white active:bg-blue-900' : ''} ${isInActive ? ' bg-red-600 text-white opacity-50 hover:bg-red-600 active:bg-red-600' : ''} ${isWinner || isLoser ? " opacity-50 hover:bg-transparent hover:text-black active:bg-transparent" : ""}`}
+            className={`w-12 h-14 border border-black rounded-2xl hover:bg-[#5e17eb] hover:text-white transition select-none active:bg-blue-700 ${styles.btn} ${isActive ? 'bg-blue-900 text-white active:bg-blue-900' : ''} ${isInActive ? ' bg-red-600 text-white opacity-50 hover:bg-red-600 active:bg-red-600' : ''} ${isWinner || isLoser ? " opacity-50 hover:bg-transparent hover:text-black active:bg-transparent" : ""} dark:border-[#5e17eb]`}
             key={key}
             disabled={isWinner || isLoser ||isActive || isInActive}
           >
