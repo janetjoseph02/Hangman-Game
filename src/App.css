@@ -4,5 +4,6 @@ body{
     align-items: center;
     justify-content: center;
     user-select: none;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
